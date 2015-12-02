@@ -1,0 +1,19 @@
+{
+  "name": "react-zhihu",
+  "version": "0.0.1",
+  "description": "react版知乎",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuguzi/reack-zhihu.git"
+  },
+  "author": "wuguzi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wuguzi/reack-zhihu/issues"
+  },
+  "homepage": "https://github.com/wuguzi/reack-zhihu#readme"
+}
