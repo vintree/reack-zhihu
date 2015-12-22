@@ -14,10 +14,10 @@ var headData = {
   keywords: '搜狐V星团',
   desc: '搜狐V星团是为粉丝精心打造的追星互动平台！只要你来，就有机会零距离接触明星！快为你最爱的明星点赞吧！',
   admins: '25250114746637056375',
-  favicon: 'http://m.tv.sohu.com/favicon.ico',
+  favicon: '../img/favicon.ico',
 }
-autoFont.init();
 
+autoFont.init();
 Head.init(headData);
 
 

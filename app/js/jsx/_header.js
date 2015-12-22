@@ -13,6 +13,53 @@
 /*   ES6   */
 import React from 'react';
 import $ from 'jquery';
+
+class LoginUser extends React.Component{
+    constructor() {
+        super();
+    }
+    render() {
+        return (
+            <div id="header-userInfoBox" className="header-userInfoBox">
+                <a id="header-user-1" className="header-user-1">
+                    <div className="header-userImgBox">
+                        <img id="header-userImg" className="header-userImg" src="../img/user.png" />
+                    </div>
+                    <div className="header-userNameBox">
+                        <span>五谷子</span>
+                    </div>
+                    <ul className="header-extendBox">
+                        <li>
+                            <i className="afa-extend fa fa-envelope"></i>
+                            <span>私信</span>
+                        </li>
+                        <li>
+                            <i className="afa-extend fa fa-gear"></i>
+                            <span>设置</span>
+                        </li>
+                        <li>
+                            <i className="afa-extend fa fa-power-off"></i>
+                            <span>退出</span>
+                        </li>
+                    </ul>
+                </a>
+                <div className="header-user-2">
+                    <a className="afa-power-off fa fa-user"></a>
+                </div>
+            </div>
+        );
+    }
+
+}
+
+
+class UnLoginUser extends React.Component{
+    constructor() {
+        super();
+    }
+}
+
+
 export default class Header extends React.Component {
     dataJson(val) {
         var dataTopic, dataUser, dataQ;
@@ -105,33 +152,9 @@ export default class Header extends React.Component {
                         <li>发现</li>
                         <li>消息</li>
                     </ul>
-                    <div id="header-userInfoBox" className="header-userInfoBox">
-                        <a id="header-user-1" className="header-user-1">
-                            <div className="header-userImgBox">
-                                <img id="header-userImg" className="header-userImg" src="../img/user.png" />
-                            </div>
-                            <div className="header-userNameBox">
-                                <span>五谷子</span>
-                            </div>
-                            <ul className="header-extendBox">
-                                <li>
-                                    <i className="afa-extend fa fa-envelope"></i>
-                                    <span>私信</span>
-                                </li>
-                                <li>
-                                    <i className="afa-extend fa fa-gear"></i>
-                                    <span>设置</span>
-                                </li>
-                                <li>
-                                    <i className="afa-extend fa fa-power-off"></i>
-                                    <span>退出</span>
-                                </li>
-                            </ul>
-                        </a>
-                        <div className="header-user-2">
-                            <a className="afa-power-off fa fa-user"></a>
-                        </div>
-                    </div>
+
+                    <LoginUser />
+
                     <div className="header-questionBox">
                         <span>提问</span>
                     </div>
